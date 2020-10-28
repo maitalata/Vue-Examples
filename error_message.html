@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VueJS Exercise</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+		<script src="vue.js" ></script>
+	</head>
+	<body> 
+        <div id="app">
+            <p v-bind:class="{errorMessage: hasError}">Permission denied</p>
+        </div>
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					message: "Maitalata",
+					hasError: true
+				}
+			})
+		</script>
+			
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VueJS Exercise</title>
+		<script src="vue.js" ></script>
+	</head>
+	<body> 
+        <div id="app">
+            <p>{{message}}</p>
+            <input v-model="message">
+        </div>
+
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					message: "Maitalata"
+				}
+			})
+		</script>
+			
+	</body>
+</html>
